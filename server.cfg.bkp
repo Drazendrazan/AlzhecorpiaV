@@ -1,0 +1,46 @@
+## [txAdmin CFG validator]: onesync MUST only be set in the txAdmin settings page.
+# set onesync on
+set sv_enforceGameBuild 2699
+set mysql_connection_string "mysql://root:@localhost/alzhecorpiav"
+endpoint_add_tcp "0.0.0.0:30120"
+endpoint_add_udp "0.0.0.0:30120"
+sv_maxclients 48
+set steam_webApiKey 0283F3C59DCD23D32D8040F8C6231D9E
+sets tags "FREEROAM, FRENCH, FR, FRANCAIS, FRANÇAIS, DISCORD, ALZHE, ALZHECORPIA, REZURRECTION, DIAMOND CITY, DIAMOND"
+sv_licenseKey "cfxk_1W39oHwslwrzFyMPgPkVn_LZ0h8"
+sv_hostname "^2Alzhecorpia^7V"
+sets sv_projectName "^2Alzhecorpia^7V ^9| ^1Serveur Sandbox Français !"
+sets sv_projectDesc "Un serveur FreeRoam pas comme les autres."
+sets locale "fr-fr" 
+sets "🔊 Communauté Discord" "https://discord.gg/CqgcnCVnyQ"
+sets "🌐 Site Internet" "https://alzhecorpia.fr/v"
+sets activitypubFeed alzhe@mastodon.social
+load_server_icon server.png
+ensure mapmanager
+ensure chat
+ensure spawnmanager
+ensure sessionmanager
+ensure basic-gamemode
+ensure hardcap
+ensure oxmysql
+ensure bobIPL
+ensure NativeUI
+ensure vMenu
+ensure pma-voice
+ensure dpClothes
+ensure dpEmotes
+ensure rp-radio
+ensure PolyZone
+ensure PolySafeZone
+ensure chat-theme-gtao
+ensure police2
+ensure pd5m
+ensure alzStream
+ensure [STREAMS]
+ensure [ALZ]
+
+add_ace group.admin command allow # allow all commands
+add_ace group.admin command.quit deny # but don't allow quit
+add_ace group.admin wave.openmenu allow
+add_principal identifier.fivem:778988 group.admin #AlzheTV
+exec permissions.cfg
