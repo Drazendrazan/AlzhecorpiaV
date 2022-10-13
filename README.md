@@ -1,15 +1,42 @@
-### AlzhecorpiaV
-- Base FIVEM personnelle. Contient divers véhicules de bonne qualité, contient une configuration semi-RP (chat de proximité, émotes, tenues à définir vMenu, tenues EUP...).
-- Base à RECONFIGURER si vous souhaitez l'utiliser pour vous. Vous pouvez également récupérer des éléments de cette base.
 
-### ATTENTION !
-- Une CLÉ FIVEM est **OBLIGATOIRE** pour avoir les tenues et imports !
-- Une CLÉ FIVEM est **OBLIGATOIRE** pour avoir d'avantage de SLOTS.
+# 📰 AlzhecorpiaV (base FiveM) • V? @thealzhe
 
-#### IMPORTANT.
-- Le serveur ne fonctionnera pas sans les ressources nécessaires, qui sont hébergées ailleurs. La clé de déchiffrement changera régulièrement.
-- RESOURCES.ZIP : `https://mega.nz/file/ANRmHALK`
-- CLÉ DE DÉCHIFFREMENT : `1zmLwSzZ5eIE0D4Tfsj8QIEcBoN0EU7m0Oidu5r-cxk`
-- MOT DE PASSE RESOURCES.ZIP `The Seed` (*case sensitive*)
+### 📃 Prérequis :
+- Avoir un hébergeur.
+- Avoir une [clé Patreon FiveM](https://www.patreon.com/fivem).
+- Quelques compétences en Lua, SQL, HTML, JS ou encore CSS.
 
-*FiveM base by AlzheTV / TheAlzhe - V1 - All Rights Reserved under GLPv3 LICENSE.*
+### 📩 Téléchargement requis :
+```
+Lien de téléchargement : https://mega.nz/file/ANRmHALK
+Clé de déchiffrement : 1zmLwSzZ5eIE0D4Tfsj8QIEcBoN0EU7m0Oidu5r-cxk
+Mot de passe fichier compressé : -> The Seed <-
+```
+*Un fichier externe est hébergé sur mega.nz (ce sont les resources complètes du serveur). Vous devez les télécharger afin que le serveur se démarre et que vous puissiez vous connecter.*
+
+### 📥 Installation :
+```
+1. Cloner cette repo dans le dossier de votre serveur.
+2. Télécharger le fichier resources.zip.
+3. Mettez le contenu du fichier resources.zip dans le dossier de votre serveur.
+```
+
+### 📥 Configuration :
+
+```
+1. Modifiez chaque ressource et chaque ligne comme bon vous semble.
+2. Créditez @thealzhe (obligatoire).
+```
+
+
+### ✏️ Choses à faire
+- Remettre en ligne ce serveur.
+
+### 📹 Previews
+- Bientôt. 😁
+
+
+### ©️ thealzhe
+```
+Base FiveM par ma personne, sous license.
+```
