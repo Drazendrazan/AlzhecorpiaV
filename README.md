@@ -28,9 +28,28 @@ Mot de passe fichier compressé : -> The Seed <-
 2. Créditez @thealzhe (obligatoire).
 ```
 
+### ⭐ Features
+```
+- A bunch of addon vehicles.
+- Two custom army animations (dpemote).
+- Cayo Perico ready.
+- Legion Square flags, and all map benches can be edited (you just have to find the right files!).
+- Last official EUP (require patreon key).
+- Last official server build.
+- Discord Rich Presence (you just have to find the right file).
+- A very simple but attractive HUD with 1, 2 and 3 keymaps.
+- Fueling system (for free as it's a freeroam).
+- An unique pause menu that very very few servers uses this.
+- Somes LSPD and services (Secret Service, Coroner, Towing) addons vehicles.
+- Somes cilivians trucks with a bunch of variants.
+- Somes military addons planes (Mig 31, F22A, BSG Viper Mk2 or even the SU-47).
+- Somes very cool scripts edited to work standalone (like the /showid, you have to see it!).
+- and some others cools features!
+```
 
 ### ✏️ Choses à faire
 - Remettre en ligne ce serveur.
+
 
 ### 📹 Previews
 - Bientôt. 😁
