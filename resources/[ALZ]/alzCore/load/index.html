@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <link href="keks.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="backdrop">
+            <div class="top">
+                <h1 title="AlzhecorpiaV">AlzhecorpiaV</h1>
+                <h2 title="Un freeroam privé pas comme les autres.">Un freeroam privé pas comme les autres.</h2>
+            </div>
+
+            <div class="letni">
+                <h2 title="Bienvenue à bord, soldat.">Bienvenue à bord, soldat.</h2>
+                <h3></h3>
+                <div class="loadbar"><div class="thingy"></div></div>
+                <p>Nous chargons nos véhicules. C'est ainsi que cela se passera.</p>
+            </div>
+            <div class="bottom">
+                <div id="gradient">
+                </div>
+            </div>
+        </div>
+<audio id="leson" src="martiallaw.mp3" autoplay="true" hidden="true" loop="true"/>
+    <script>
+
+    var play = false;
+    var myAudio = document.getElementById("leson");
+    
+    myAudio.volume = 0.1;
+
+    function onKeyDown(event) {
+            switch (event.keyCode) {
+                case 32: //SpaceBar                    
+                    if (play) {
+                        myAudio.pause();
+                        play = false;
+                    } else {
+                        myAudio.play();
+                        play = true;
+                    }
+                    break;
+            }
+      return false;
+    }
+
+    window.addEventListener("keydown", onKeyDown, false);
+    </script>
+<script type="text/javascript">
+var count = 0;
+var thisCount = 0;
+
+const emoji = {
+    INIT_BEFORE_MAP_LOADED: [ '🌟' ],
+    INIT_AFTER_MAP_LOADED: [ '✨'],
+    INIT_SESSION: [ '🌠' ],
+};
+
+const handlers = {
+    startInitFunctionOrder(data)
+    {
+        count = data.count;
+
+        document.querySelector('.letni h3').innerHTML += emoji[data.type][data.order - 1] || '';
+    },
+
+    initFunctionInvoking(data)
+    {
+        document.querySelector('.thingy').style.left = '0%';
+        document.querySelector('.thingy').style.width = ((data.idx / count) * 100) + '%';
+    },
+
+    startDataFileEntries(data)
+    {
+        count = data.count;
+
+        document.querySelector('.letni h3').innerHTML += "\u{1f358}";
+    },
+
+    performMapLoadFunction(data)
+    {
+        ++thisCount;
+
+        document.querySelector('.thingy').style.left = '0%';
+        document.querySelector('.thingy').style.width = ((thisCount / count) * 100) + '%';
+    },
+
+    onLogLine(data)
+    {
+        document.querySelector('.letni p').innerHTML = data.message + "..!";
+    }
+};
+
+window.addEventListener('message', function(e)
+{
+    (handlers[e.data.eventName] || function() {})(e.data);
+});
+</script>
+    </body>
+</html>
